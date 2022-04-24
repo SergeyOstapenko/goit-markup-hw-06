@@ -45,6 +45,30 @@
                     <button class="modal-btn" data-modal-close>
                         <svg width="18px" height="18px"><use href="./images/icons.svg#icon-close-black-18dp-2-1"></use></svg>
                     </button>
+                    <div class="modal-container">
+                        <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+                    <label>
+                        Имя
+                        <input type="text" name="name" />
+                      </label>
+                      <label>
+                        Телефон
+                        <input type="tel" name="tel" />
+                      </label>
+                      <label>
+                        Почта
+                        <input type="email" name="email" />
+                      </label>
+                      <label>
+                        Комментарий
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                      </label>
+                    </div>
+                    <label>
+                        <input type="checkbox" name="language" value="mailing list">
+                        Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
+                    </label>
+                    <button class="button primery" type="submit">Отправить</button>
                 </div>
             </div>
         </section>
@@ -360,6 +384,17 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-form" role="group">
+                <p class="social-text">Подпишитесь на рассылку</p>
+                <div class="send-container">
+                    <input type="text" placeholder="E-mail">
+                    <button type="submit" class="button primery button-send">Подписаться
+                        <svg class="icon-send" width="24px" height="24px">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </footer>
