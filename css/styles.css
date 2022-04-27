@@ -235,6 +235,18 @@ h1, h2, h3, h4, p {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
+ .modal-form-container {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 40px;
+ }
+
  .modal-form {
     position: absolute;
     width: 528px;
@@ -277,7 +289,8 @@ h1, h2, h3, h4, p {
      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .modal-btn:focus {
+ .modal-btn:focus,
+ .modal-btn:hover {
     fill: var(--accent-text-color);
  }
 
@@ -355,8 +368,12 @@ h1, h2, h3, h4, p {
  .form-mailing {
      display: flex;
      align-items: center;
+     justify-content: center;
+
      position: relative;
      margin-bottom: 30px;
+     margin-left: auto;
+     margin-right: auto;
  }
 
  .visually-hidden {
@@ -419,6 +436,13 @@ h1, h2, h3, h4, p {
     outline: transparent;
 
     cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.button.modal-button-send:hover,
+.button.modal-button-send:focus {
+    background-color: var(--btn-hover-color);
 }
 
  /* Sections */
