@@ -372,10 +372,6 @@ h1, h2, h3, h4, p {
     overflow: hidden;
   }
 
- .form-mailing-input{
-     margin-right: 8px;
- }
-
  .form-mailing-checkbox {
     display: flex;
     align-items: center; 
@@ -420,7 +416,6 @@ h1, h2, h3, h4, p {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    text-align: center;
     outline: transparent;
 
     cursor: pointer;
