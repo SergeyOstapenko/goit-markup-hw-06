@@ -37,39 +37,52 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
-                <button type="button" class="button primery" data-modal-open>Заказать услугу</button>
+                <button type="button button-send" class="button primery" data-modal-open>Заказать услугу</button>
             </div>
               <!--Modal-form  -->
             <div class="backdrop" data-modal>
-                <div action="" class="modal-form">
+                <form class="modal-form">
                     <button class="modal-btn" data-modal-close>
-                        <svg width="18px" height="18px"><use href="./images/icons.svg#icon-close-black-18dp-2-1"></use></svg>
+                        <svg class="modal-btn-icon" width="18px" height="18px"><use href="./images/icons.svg#icon-close-black-18dp-2-1"></use></svg>
                     </button>
-                    <div class="modal-container">
-                        <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-                    <label>
-                        Имя
-                        <input type="text" name="name" />
-                      </label>
-                      <label>
-                        Телефон
-                        <input type="tel" name="tel" />
-                      </label>
-                      <label>
-                        Почта
-                        <input type="email" name="email" />
-                      </label>
-                      <label>
-                        Комментарий
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
-                      </label>
-                    </div>
-                    <label>
-                        <input type="checkbox" name="language" value="mailing list">
-                        Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
+                    <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+                    <label class="form-field" for="name">Имя
+                        <input class="form-input" type="text" name="name"/>
+                        <svg class="modal-form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                        </svg>
                     </label>
-                    <button class="button primery" type="submit">Отправить</button>
-                </div>
+                            
+                    <label class="form-field" for="tel">Телефон
+                        <input class="form-input" type="tel" name="tel"/>
+                        <svg class="modal-form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                        </svg>
+                    </label>
+                            
+                    <label class="form-field" for="email">Почта
+                        <input class="form-input" type="email" name="email"/>
+                        <svg class="modal-form-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                        </svg>
+                    </label>
+                            
+                    <label class="form-field">Комментарий
+                        <textarea class="form-textarea" name="comment" rows="8" placeholder="Введите текст"></textarea>
+                    </label>
+                           
+                    <label class="form-mailing">
+                        <input class="form-mailing-input visually-hidden" type="checkbox" name="language" value="mailing list" role="checkbox">
+                        <span class="form-mailing-checkbox">
+                            <svg class="form-mailing-icon" width="16px" height="15px">
+                                <use href="./images/icons.svg#icon-icon-check-1"></use>
+                            </svg>
+                        </span>
+                        <span class="form-mailing-text">Соглашаюсь с рассылкой и принимаю <a class="form-mailing-link" href="">Условия договора</a></span>
+                    </label>
+                        
+                    <button class="button modal-button-send" type="submit">Отправить</button>
+                </form>
             </div>
         </section>
           
@@ -385,17 +398,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-form" role="group">
+            <form class="footer-form">
                 <p class="social-text">Подпишитесь на рассылку</p>
                 <div class="send-container">
                     <input type="text" placeholder="E-mail">
-                    <button type="submit" class="button primery button-send">Подписаться
+                    <button type="submit" class="button button-send">Подписаться
                         <svg class="icon-send" width="24px" height="24px">
                             <use href="./images/icons.svg#icon-icon-send"></use>
                         </svg>
                     </button>
                 </div>
-            </div>
+            </form>
         </div>
     </footer>
 
