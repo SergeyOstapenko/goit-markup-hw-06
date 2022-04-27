@@ -41,10 +41,11 @@
             </div>
               <!--Modal-form  -->
             <div class="backdrop" data-modal>
-                <form class="modal-form">
+                <div class="modal-form">
                     <button class="modal-btn" data-modal-close>
                         <svg class="modal-btn-icon" width="18px" height="18px"><use href="./images/icons.svg#icon-close-black-18dp-2-1"></use></svg>
                     </button>
+                   <form>
                     <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
                     <label class="form-field">Имя
                         <input class="form-input" type="text" name="name"/>
@@ -72,7 +73,7 @@
                     </label>
                            
                     <label class="form-mailing">
-                        <input class="form-mailing-input visually-hidden" type="checkbox" name="language" value="mailing list" role="checkbox" aria-hidden="true">
+                        <input class="form-mailing-input visually-hidden" type="checkbox">
                         <span class="form-mailing-checkbox">
                             <svg class="form-mailing-icon" width="16px" height="15px">
                                 <use href="./images/icons.svg#icon-icon-check-1"></use>
@@ -82,7 +83,8 @@
                     </label>
                         
                     <button class="button modal-button-send" type="submit">Отправить</button>
-                </form>
+                   </form>
+                </div>
             </div>
         </section>
           
